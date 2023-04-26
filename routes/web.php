@@ -18,3 +18,5 @@ Route::get('/posts',[PostController::class,'index']);
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/posts/{post}/edit',[PostController::class,'edit']);
+Route::put('/posts/{post}',[PostController::class,'update']);
